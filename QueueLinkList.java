@@ -2,12 +2,12 @@ import java.util.Scanner; // Import Scanner for user input
 
 // Queue using Single Linked List
 public class QueueLinkList {
-    private static class Node {
-        int data; // Data stored in the node
-        Node next; // Pointer to the next node
+ private static class Node {
+ int data; // Data stored in the node
+Node next;
 
-        Node(int data) {
-            this.data = data; // Initialize data
+    Node(int data) {
+       this.data = data; // Initialize data
             next = null; // Set next as null
         }
     }
@@ -16,11 +16,12 @@ public class QueueLinkList {
         private Node front, rear; // Front and rear pointers
 
         public Queue() {
-            this.front = this.rear = null; // Initialize an empty queue
+  this.front = this.rear = null; 
+// Initialize an empty queue
         }
 
-        // Enqueue operation (Insert at the rear)
-        public void enqueue(int data) {
+      
+ public void enqueue(int data) {
             Node newNode = new Node(data); // Create a new node
             if (rear == null) { // If queue is empty
                 front = rear = newNode; // Both front and rear point to new node
